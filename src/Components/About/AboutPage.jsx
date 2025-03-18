@@ -9,29 +9,23 @@ const AboutPage = () => {
     <div className="about-page-wrapper">
       <div className="about-hero">
         <div className="about-hero-content">
-          <h1>About Our Astrology Store</h1>
-          <p>Connecting you with cosmic energies through carefully crafted spiritual jewelry</p>
+          <h1>About Mens Jewel</h1>
+          <p>Refined Elegance, Unmatched Craftsmanship – Elevate Your Style</p>
         </div>
       </div>
 
       <section className="about-section container">
         <div className="about-intro">
           <div className="about-image-container">
-            <img src={about1} alt="Astrology Shop" className="about-image" />
+            <img src={about1} alt="Mens Jewelry Collection" className="about-image" />
           </div>
           <div className="about-intro-content">
-            <h2>Our Journey</h2>
+            <h2>Our Story</h2>
             <p className="lead-text">
-              We believe in the power of astrology to transform lives. Our store
-              offers carefully curated spiritual jewelry and bracelets, designed
-              to bring balance, healing, and positivity.
+              At **Mens Jewel**, we believe that jewelry is more than just an accessory—it's an expression of confidence, power, and individuality.  
             </p>
             <p>
-              Our journey began with a deep understanding of the cosmic energies
-              that influence our daily lives. Each product in our collection is
-              selected with intention, ensuring it aligns with the needs of our
-              customers. Whether you seek prosperity, love, or protection, our
-              collection is here to support your spiritual path.
+              Our journey began with a passion for timeless design and expert craftsmanship. Inspired by the modern gentleman, we curate premium-quality rings, bracelets, necklaces, and accessories that redefine men's fashion. Each piece is designed to make a statement—bold, sophisticated, and effortlessly stylish.
             </p>
           </div>
         </div>
@@ -40,31 +34,26 @@ const AboutPage = () => {
           <div className="value-card">
             <h3>Our Mission</h3>
             <p>
-              To provide high-quality astrology-based products that promote
-              spiritual well-being and inner harmony.
+              To empower men with premium jewelry that exudes confidence, class, and individuality.
             </p>
           </div>
           <div className="value-card">
             <h3>Our Vision</h3>
             <p>
-              To be the go-to destination for individuals seeking powerful
-              astrology jewelry and healing accessories.
+              To be the leading destination for men's jewelry, offering unparalleled craftsmanship and timeless designs.
             </p>
           </div>
         </div>
 
         <div className="about-who-we-are">
           <div className="who-we-are-content">
-            <h2>Who We Are</h2>
+            <h2>Craftsmanship & Quality</h2>
             <p>
-              Our store is a blend of tradition and modernity, offering
-              premium-quality astrology products crafted to channel positive
-              energies. Each bracelet, necklace, and ring is infused with
-              cosmic significance to help you manifest your desires.
+              Every piece in our collection is handcrafted using the finest materials—sterling silver, stainless steel, and premium leather. Designed for the modern man, our jewelry combines contemporary aesthetics with lasting durability. Whether it’s a sleek minimalist ring or a bold statement necklace, each design is crafted to elevate your look.
             </p>
           </div>
           <div className="who-we-are-image">
-            <img src={about2} alt="Astrology Collection" className="about-image" />
+            <img src={about2} alt="Mens Jewelry Crafting" className="about-image" />
           </div>
         </div>
       </section>
