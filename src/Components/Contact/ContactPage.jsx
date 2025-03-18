@@ -2,62 +2,57 @@ import React, { useState } from "react";
 import "./ContactPage.css";
 
 const ContactPage = () => {
-  const [name, setname] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setmessage] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(
       `Thank You ${name} for Contacting Us. We will Get Back to You Soon.\n\nYour Mail Id - ${email}.\nYour Message is - ${message}`
     );
-    setname("");
+    setName("");
     setEmail("");
-    setmessage("");
+    setMessage("");
   };
 
   return (
     <>
       <div className="contactSection">
         <h2>Contact Us</h2>
+
+        {/* Google Maps Embed with Updated Store Location */}
         <div className="contactMap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49206.16593395236!2d2.5776979486328124!3d39.57346430000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793280de39c05%3A0x85d5f5ea839d6c2a!2sUOMO!5e0!3m2!1sen!2sin!4v1708798894132!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.457393465506!2d77.07331737457774!3d28.495833275739812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d227d16b964e7%3A0xf978029d06fbe56!2sBPTP%20Centra%20One!5e0!3m2!1sen!2sin!4v1708812234567!5m2!1sen!2sin"
             width="800"
             height="600"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="uomomap"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="store-location"
           ></iframe>
         </div>
+
+        {/* Contact Information */}
         <div className="contactInfo">
           <div className="contactAddress">
             <div className="address">
-              <h3>Store in London</h3>
+              <h3>Our Store</h3>
               <p>
-                1418 River Drive, Suite 35 Cottonhall, CA 9622
-                <br /> United Kingdom
+                Level 3 and Level 4, BPTP Centra One,<br />
+                Golf Course Ext Rd, Sector 61, <br />
+                Gurugram, Haryana 122102, INDIA
               </p>
               <p>
-                admin@dummymail.com
+                support@mensjewel.com
                 <br />
-                +44 20 7123 4567
-              </p>
-            </div>
-            <div className="address">
-              <h3>Store in India</h3>
-              <p>
-                A-791, A-791, Bandra Reclamation Rd, Mumbai
-                <br /> Maharashtra
-              </p>
-              <p>
-                contact@dummymail.com
-                <br />
-                +44 20 7123 4567
+                +91 99999 99999
               </p>
             </div>
           </div>
+
+          {/* Contact Form */}
           <div className="contactForm">
             <h3>Get In Touch</h3>
             <form onSubmit={handleSubmit}>
@@ -65,7 +60,7 @@ const ContactPage = () => {
                 type="text"
                 value={name}
                 placeholder="Name *"
-                onChange={(e) => setname(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
               <input
@@ -80,7 +75,7 @@ const ContactPage = () => {
                 cols={40}
                 placeholder="Your Message"
                 value={message}
-                onChange={(e) => setmessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
               />
               <button type="submit">Submit</button>
             </form>

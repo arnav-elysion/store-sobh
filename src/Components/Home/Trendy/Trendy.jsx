@@ -82,7 +82,7 @@ const Trendy = () => {
     <>
       <div className="trendyProducts">
         <h2>
-          Our Trendy <span>Products</span>
+          Trending <span>Collection</span>
         </h2>
         <div className="trendyTabs">
           <div className="tabs">
@@ -102,13 +102,13 @@ const Trendy = () => {
               onClick={() => handleTabClick("tab3")}
               className={activeTab === "tab3" ? "active" : ""}
             >
-              Best Seller
+              Best Sellers
             </p>
             <p
               onClick={() => handleTabClick("tab4")}
               className={activeTab === "tab4" ? "active" : ""}
             >
-              Top Rated
+              Premium
             </p>
           </div>
           <div className="trendyTabContent">
@@ -118,7 +118,7 @@ const Trendy = () => {
                 {StoreData.slice(0, 8).map((product) => (
                   <div className="trendyProductContainer" key={product.id}>
                     <div className="trendyProductImages">
-                      <Link to="/Product" onClick={scrollToTop}>
+                      <Link to="/" onClick={scrollToTop}>
                         <img
                           src={product.frontImg}
                           alt=""
@@ -142,7 +142,7 @@ const Trendy = () => {
                     </div>
                     <div className="trendyProductInfo">
                       <div className="trendyProductCategoryWishlist">
-                        <p>Dresses</p>
+                        <p>Jewelry</p>
                         <FiHeart
                           onClick={() => handleWishlistClick(product.productID)}
                           style={{
@@ -184,7 +184,7 @@ const Trendy = () => {
                   .map((product) => (
                     <div className="trendyProductContainer" key={product.id}>
                       <div className="trendyProductImages">
-                        <Link to="/Product" onClick={scrollToTop}>
+                        <Link to="/" onClick={scrollToTop}>
                           <img
                             src={product.frontImg}
                             alt=""
@@ -208,7 +208,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Jewelry</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)
@@ -252,7 +252,7 @@ const Trendy = () => {
                   .map((product) => (
                     <div className="trendyProductContainer" key={product.id}>
                       <div className="trendyProductImages">
-                        <Link to="/Product" onClick={scrollToTop}>
+                        <Link to="/" onClick={scrollToTop}>
                           <img
                             src={product.frontImg}
                             alt=""
@@ -276,7 +276,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Jewelry</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)
@@ -320,7 +320,7 @@ const Trendy = () => {
                   .map((product) => (
                     <div className="trendyProductContainer" key={product.id}>
                       <div className="trendyProductImages">
-                        <Link to="/Product">
+                        <Link to="/">
                           <img
                             src={product.frontImg}
                             alt=""
@@ -344,7 +344,7 @@ const Trendy = () => {
                       </div>
                       <div className="trendyProductInfo">
                         <div className="trendyProductCategoryWishlist">
-                          <p>Dresses</p>
+                          <p>Jewelry</p>
                           <FiHeart
                             onClick={() =>
                               handleWishlistClick(product.productID)
@@ -358,7 +358,7 @@ const Trendy = () => {
                           />
                         </div>
                         <div className="trendyProductNameInfo">
-                          <Link to="/product" onClick={scrollToTop}>
+                          <Link to="/" onClick={scrollToTop}>
                             <h5>{product.productName}</h5>
                           </Link>
 
@@ -383,7 +383,7 @@ const Trendy = () => {
         </div>
         <div className="discoverMore">
           <Link to="/shop" onClick={scrollToTop}>
-            <p>Discover More</p>
+            <p>View All Collection</p>
           </Link>
         </div>
       </div>

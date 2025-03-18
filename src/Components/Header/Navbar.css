@@ -24,8 +24,32 @@
   justify-content: center;
 }
 
-.logoContainer img {
-  background: none !important;
+/* New Logo Text Styling */
+.logo-text {
+  text-decoration: none;
+  color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-main {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b1b1b;
+  position: relative;
+}
+
+.logo-main::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #1b1b1b;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .linkContainer ul {
@@ -94,6 +118,11 @@
     position: relative;
     z-index: 10;
     background-color: white;
+  }
+  
+  /* Responsive logo styling */
+  .mobile-nav .logo-main {
+    font-size: 20px;
   }
 }
 

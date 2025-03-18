@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 import { useSelector } from "react-redux";
-
-import logo from "../../Assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { RiMenu2Line } from "react-icons/ri";
@@ -14,7 +12,6 @@ import { MdOutlineClose } from "react-icons/md";
 import { FiHeart } from "react-icons/fi";
 
 // social Links imports Icons
-
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -46,8 +43,8 @@ const Navbar = () => {
       <nav className="navBar">
         <div className="logoLinkContainer">
           <div className="logoContainer">
-            <Link to="/" onClick={scrollToTop}>
-              <img src={logo} alt="Logo" />
+            <Link to="/" onClick={scrollToTop} className="logo-text">
+              <span className="logo-main">MENS JEWEL</span>
             </Link>
           </div>
           <div className="linkContainer">
@@ -62,11 +59,7 @@ const Navbar = () => {
                   SHOP
                 </Link>
               </li>
-              <li>
-                <Link to="/blog" onClick={scrollToTop}>
-                  BLOG
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/about" onClick={scrollToTop}>
                   ABOUT
@@ -98,7 +91,6 @@ const Navbar = () => {
             </Badge>
           </Link>
           <FiHeart size={22} onClick={scrollToTop} />
-          {/* <RiMenu2Line size={22} /> */}
         </div>
       </nav>
 
@@ -111,8 +103,8 @@ const Navbar = () => {
             <RiMenu2Line size={22} onClick={toggleMobileMenu} />
           )}
           <div className="logoContainer">
-            <Link to="/">
-              <img src={logo} alt="Logo" />
+            <Link to="/" className="logo-text">
+              <span className="logo-main">MENS JEWEL</span>
             </Link>
           </div>
           <Link to="/cart">

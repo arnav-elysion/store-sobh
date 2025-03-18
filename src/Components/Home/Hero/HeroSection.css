@@ -1,26 +1,30 @@
 .heroMain {
-  background-color: #f4e5e0;
-  background-image: url("../../../Assets/slideshow-pattern.png");
+  background-color: #1a1a1a;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../../Assets/slideshow-pattern.png");
   background-size: cover;
-  padding: 0 160px;
+  padding: 80px 160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
+  min-height: 600px;
 }
 
 .sectionleft {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   width: 50%;
 }
 
 .sectionleft p {
   position: relative;
   padding-left: 50px;
-  color: #c22928;
+  color: #c8a97e;
   text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
 
 .sectionleft p::before {
@@ -28,7 +32,7 @@
   display: block;
   width: 35px;
   height: 2px;
-  background-color: #c32929;
+  background-color: #c8a97e;
   position: absolute;
   left: 0;
   top: 50%;
@@ -36,43 +40,49 @@
 }
 
 .sectionleft h1 {
-  font-size: 70px;
+  font-size: 64px;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.sectionleft span {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 90%;
 }
 
 .heroLink {
-  display: flex;
+  margin-top: 10px;
 }
 
-.sectionleft a {
+.shop-now-btn {
+  display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #fff;
+  background-color: #c8a97e;
+  padding: 16px 36px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
-.sectionleft a {
-  position: relative;
+.shop-now-btn:hover {
+  background-color: #b89668;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.sectionleft a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 75%;
-  border-bottom: 2px solid black;
-  transition: width 0.2s ease;
-}
-
-.sectionleft a:hover::after {
-  width: 100%;
-}
-
-.sectionleft h5 {
-  display: flex;
+.shop-now-btn h5 {
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
 .sectionright {
@@ -84,72 +94,116 @@
   position: relative;
 }
 
-.canvasModel {
-  height: 700px !important;
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.heroColorBtn {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  justify-content: center;
-  position: absolute;
-  bottom: 130px;
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.heroColorBtn button {
-  border-radius: 50%;
-  padding: 10px;
-  border: 1px solid white;
+.image-container:hover .heroImage {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+  .heroMain {
+    padding: 60px 80px;
+  }
+  
+  .sectionleft h1 {
+    font-size: 54px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .heroMain {
-    padding: 30px 60px;
+    padding: 50px 60px;
   }
-
+  
   .sectionleft h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
-
-  .canvasModel {
-    height: 400px !important;
+  
+  .sectionleft span {
+    font-size: 16px;
   }
+  
+  .shop-now-btn {
+    padding: 14px 30px;
+  }
+}
 
-  .heroColorBtn {
-    bottom: 60px;
+@media screen and (max-width: 650px) {
+  .heroMain {
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .sectionleft {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .sectionleft p {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  
+  .sectionleft p::before {
+    width: 40px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  
+  .sectionleft h1 {
+    font-size: 36px;
+  }
+  
+  .sectionleft span {
+    max-width: 100%;
+  }
+  
+  .sectionright {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .image-container {
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 450px) {
   .heroMain {
-    padding: 45px 15px;
-    flex-direction: column;
-    justify-content: normal;
+    padding: 40px 15px;
   }
-
-  .sectionleft {
-    width: 100%;
-  }
-
+  
   .sectionleft h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
-
+  
   .sectionleft p {
     font-size: 14px;
   }
-
-  .sectionright {
-    width: 100%;
+  
+  .sectionleft span {
+    font-size: 15px;
   }
-
-  .canvasModel {
-    height: 300px !important;
-    width: 250px !important;
-  }
-
-  .heroColorBtn {
-    bottom: 10px;
+  
+  .shop-now-btn {
+    padding: 12px 24px;
   }
 }

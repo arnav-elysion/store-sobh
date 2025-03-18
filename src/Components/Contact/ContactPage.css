@@ -1,112 +1,199 @@
+/* Contact Section */
+.contactSection {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+/* Contact Heading */
 .contactSection h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 30px;
-  padding-left: 250px;
+  color: #272727;
+  margin-bottom: 30px;
+}
+
+/* Google Map Styling */
+.contactMap {
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
 }
 
 .contactMap iframe {
   width: 100%;
+  height: 500px;
+  border-radius: 10px;
   border: none;
-  background-color: #e4e4e4;
 }
 
+/* Contact Info Section */
 .contactInfo {
-  padding: 0 250px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 60px;
   display: flex;
-  flex-direction: column;
-  gap: 60px;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
 }
 
+/* Address Section */
 .contactAddress {
-  display: flex;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 50px;
-  width: 50%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: left;
 }
 
 .address h3 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .address p {
-  font-size: 14px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contactForm {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1.5;
 }
 
 .contactForm h3 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 40px;
+  color: #272727;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .contactForm form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
-.contactForm form input {
-  padding: 15px;
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
   border: 2px solid #e4e4e4;
-  color: #272727;
-  outline-color: black;
+  border-radius: 8px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactForm form input:focus,
+.contactForm form textarea:focus {
+  border-color: #272727;
+  background-color: #f1f1f1;
 }
 
 .contactForm form textarea {
-  font-size: 14px;
-  padding: 15px;
-  border: 2px solid #e4e4e4;
-  color: #272727;
-  outline-color: black;
+  resize: none;
+  height: 180px;
 }
 
+/* Submit Button */
 .contactForm form button {
-  width: 20%;
-  background-color: black;
+  width: 100%;
+  background-color: #000;
   color: white;
   border: none;
-  padding: 20px 5px;
+  padding: 18px;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 18px;
   cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1210px) {
-  .contactSection h2 {
-    padding: 30px 60px;
+.contactForm form button:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .contactSection {
+    padding: 50px 5%;
   }
 
   .contactInfo {
-    padding: 0 60px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .contactSection h2 {
-    padding: 30px 15px;
-  }
-
-  .contactInfo {
-    padding: 0 15px;
-  }
-
-  .contactAddress {
     flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
   }
 
-  .address {
-    width: 100%;
+  .contactMap {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactSection {
+    padding: 40px 5%;
+  }
+
+  .contactForm {
+    padding: 30px;
+  }
+
+  .contactForm h3 {
+    font-size: 24px;
+  }
+
+  .contactForm form input,
+  .contactForm form textarea {
+    font-size: 16px;
   }
 
   .contactForm form button {
-    width: 50%;
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contactSection h2 {
+    font-size: 32px;
+  }
+
+  .contactInfo {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .contactMap {
+    padding: 15px;
+  }
+
+  .contactForm {
+    padding: 20px;
+  }
+
+  .contactForm form button {
+    font-size: 16px;
+    padding: 12px;
   }
 }

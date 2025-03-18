@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Product_2 from "../../../Assets/Products/Product_2.webp";
 import "./DealTimer.css";
 
 const DealTimer = () => {
@@ -11,19 +12,19 @@ const DealTimer = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState({
-    days: 31,
-    hours: 29,
+    days: 6,
+    hours: 21,
     minutes: 57,
     seconds: 17,
   });
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft((prevTimeLeft) => {
-        const { days, hours, minutes, seconds } = prevTimeLeft;
+      setTimeLeft((prev) => {
+        const { days, hours, minutes, seconds } = prev;
         if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
           clearInterval(timer);
-          return prevTimeLeft;
+          return prev;
         }
         let newSeconds = seconds - 1;
         let newMinutes = minutes;
@@ -60,47 +61,52 @@ const DealTimer = () => {
   };
 
   return (
-    <>
-      <div className="mainDeal">
-        <div className="dealTimer">
-          <div className="dealTimerMainContent">
-            <div className="dealTimeContent">
-              <p>Deal of the Week</p>
-              <h3>
-                Spring
-                <span> Collection</span>
-              </h3>
-              <div className="dealTimeLink">
-                <Link to="/shop" onClick={scrollToTop}>
-                  Shop Now
-                </Link>
-              </div>
+    <div className="deal-timer-container">
+      <div className="deal-timer-content">
+        <div className="deal-left-section">
+          <h3 className="deal-subtitle">REFINED ELEGANCE</h3>
+          <h2 className="deal-title">DEAL OF THE WEEK</h2>
+          <p className="deal-description">
+            Discover our exclusive Selenite Crystal Pendant from our premium men's jewelry collection.
+            Timeless design meets contemporary sophistication.
+          </p>
+          
+          <div className="timer-container">
+            <div className="timer-block">
+              <span className="timer-value">{timeLeft.days}</span>
+              <span className="timer-label">Days</span>
             </div>
-            <div className="dealTimeCounter">
-              <div className="dealTimeDigit">
-                <h4>{timeLeft.days}</h4>
-                <p>Days</p>
-              </div>
-              <h4>:</h4>
-              <div className="dealTimeDigit">
-                <h4>{timeLeft.hours}</h4>
-                <p>Hours</p>
-              </div>
-              <h4>:</h4>
-              <div className="dealTimeDigit">
-                <h4>{formatTime(timeLeft.minutes)}</h4>
-                <p>Minutes</p>
-              </div>
-              <h4>:</h4>
-              <div className="dealTimeDigit">
-                <h4>{formatTime(timeLeft.seconds)}</h4>
-                <p>Seconds</p>
-              </div>
+            <span className="timer-separator">:</span>
+            <div className="timer-block">
+              <span className="timer-value">{formatTime(timeLeft.hours)}</span>
+              <span className="timer-label">Hours</span>
             </div>
+            <span className="timer-separator">:</span>
+            <div className="timer-block">
+              <span className="timer-value">{formatTime(timeLeft.minutes)}</span>
+              <span className="timer-label">Minutes</span>
+            </div>
+            <span className="timer-separator">:</span>
+            <div className="timer-block">
+              <span className="timer-value">{formatTime(timeLeft.seconds)}</span>
+              <span className="timer-label">Seconds</span>
+            </div>
+          </div>
+          
+          <Link to="/shop" onClick={scrollToTop} className="shop-button">
+            SHOP COLLECTION
+          </Link>
+        </div>
+        
+        <div className="deal-right-section">
+          <div className="deal-image-container">
+            <span className="discount-badge">20% OFF</span>
+            <img src={Product_2} alt="Selenite Crystal Pendant" className="deal-image" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
+
 export default DealTimer;

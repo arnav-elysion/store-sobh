@@ -1,192 +1,181 @@
-.mainDeal {
-  padding: 15px;
-}
-
-.dealTimer {
-  background-color: #ebebeb;
-  background-image: url(../../../Assets/Deal/dealbg.jpg);
-  height: 500px;
-  background-size: cover;
-  padding: 0 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.dealTimerMainContent {
-  display: flex;
-  flex-direction: column;
+.deal-timer-container {
+  background-color: #121212;
+  background-image: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
   padding: 60px 0;
-  gap: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
-.dealTimeContent {
+.deal-timer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url('/path/to/subtle-pattern.png'); */
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.deal-timer-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.deal-left-section {
+  flex: 1;
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
 }
 
-.dealTimeContent p {
-  position: relative;
-  padding-left: 50px;
-  color: #c32929;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.dealTimeContent p::before {
-  content: "";
-  display: block;
-  width: 35px;
-  height: 2px;
-  background-color: #c32929;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.dealTimeContent h3 {
-  font-size: 70px;
-  text-transform: uppercase;
-}
-
-.dealTimeContent h3 span {
-  font-weight: 500;
-}
-
-.dealTimeLink {
-  display: flex;
-}
-
-.dealTimeLink a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
+.deal-subtitle {
   font-size: 14px;
-  position: relative;
+  color: #c9a55d;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
-.dealTimeLink a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50%;
-  border-bottom: 2px solid black;
-  transition: width 0.2s ease;
+.deal-title {
+  font-size: 42px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  line-height: 1.1;
 }
 
-.dealTimeLink a:hover::after {
-  width: 100%;
+.deal-description {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 
-.dealTimeCounter {
+.timer-container {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.dealTimeDigit {
+.timer-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 10px;
 }
 
-.dealTimeCounter h4 {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.dealTimeDigit h4 {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.dealTimeDigit p {
-  font-size: 16px;
+.timer-value {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(201, 165, 93, 0.3);
+  color: #ffffff;
+  font-size: 28px;
   font-weight: 700;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.timer-label {
+  font-size: 12px;
+  color: #c9a55d;
   text-transform: uppercase;
-  color: #767676;
+  letter-spacing: 1px;
 }
 
-@media screen and (max-width: 1210px) {
-  .dealTimer {
-    padding: 0 60px;
-    height: 450px;
-    background-position: center;
-  }
-  .dealTimerMainContent {
-    padding: 50px 0;
-  }
-  .dealTimeContent p {
-    padding-left: 40px;
-  }
-  .dealTimeContent h3 {
-    font-size: 60px;
-  }
-  .dealTimeCounter h4 {
-    font-size: 25px;
-  }
-  .dealTimeDigit h4 {
-    font-size: 25px;
-  }
-  .dealTimeDigit p {
-    font-size: 14px;
-  }
-  .dealTimeContent a:hover::after {
-    width: 9%;
-  }
+.timer-separator {
+  color: #c9a55d;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 5px 30px 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .dealTimer {
-    height: 450px;
-    background-position: center right 40%;
-  }
-  .dealTimeContent a:hover::after {
-    width: 13%;
-  }
+.shop-button {
+  background-color: #c9a55d;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 240px;
+  text-align: center;
 }
 
-@media screen and (max-width: 450px) {
-  .dealTimer {
-    padding: 0 15px;
-    height: 400px;
-    background-position: center right 40%;
-  }
-  .dealTimerMainContent {
-    padding: 40px 0;
-  }
-  .dealTimeContent h3 {
-    font-size: 40px;
-  }
-  .dealTimeContent a:hover::after {
-    width: 25%;
-  }
+.shop-button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-@media screen and (max-width: 320px) {
-  .dealTimer {
-    padding: 0 20px;
-    height: 350px;
+.deal-right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deal-image-container {
+  position: relative;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #c9a55d;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.deal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .deal-timer-content {
+    flex-direction: column;
   }
-  .dealTimerMainContent {
-    padding: 20px 0;
+  
+  .deal-left-section {
+    padding-right: 0;
+    margin-bottom: 40px;
   }
-  .dealTimeContent p {
-    padding-left: 50px;
+  
+  .deal-title {
+    font-size: 32px;
   }
-  .dealTimeCounter h4 {
-    font-size: 20px;
-  }
-  .dealTimeDigit h4 {
-    font-size: 20px;
-  }
-  .dealTimeDigit p {
-    font-size: 12px;
-  }
-  .dealTimeContent a:hover::after {
-    width: 30%;
+  
+  .timer-value {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
   }
 }

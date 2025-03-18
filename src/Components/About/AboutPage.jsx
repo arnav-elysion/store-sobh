@@ -1,148 +1,77 @@
 import React from "react";
 import "./AboutPage.css";
-
-import about1 from "../../Assets/About/about-1.jpg";
 import about2 from "../../Assets/About/about-2.jpg";
-
+import about1 from "../../Assets/About/about-1.jpeg";
 import Services from "../../Components/Home/Services/Services";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Autoplay } from "swiper/modules";
-
-import brand1 from "../../Assets/Brands/brand1.png";
-import brand2 from "../../Assets/Brands/brand2.png";
-import brand3 from "../../Assets/Brands/brand3.png";
-import brand4 from "../../Assets/Brands/brand4.png";
-import brand5 from "../../Assets/Brands/brand5.png";
-import brand6 from "../../Assets/Brands/brand6.png";
-import brand7 from "../../Assets/Brands/brand7.png";
 
 const AboutPage = () => {
   return (
-    <>
-      <div className="aboutSection">
-        <h2>About Uomo</h2>
-        <img src={about1} alt="" />
-        <div className="aboutContent">
-          <h3>Our Story</h3>
-          <h4>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </h4>
-          <p>
-            Saw wherein fruitful good days image them, midst, waters upon, saw.
-            Seas lights seasons. Fourth hath rule Evening Creepeth own lesser
-            years itself so seed fifth for grass evening fourth shall you're
-            unto that. Had. Female replenish for yielding so saw all one to
-            yielding grass you'll air sea it, open waters subdue, hath. Brought
-            second Made. Be. Under male male, firmament, beast had light after
-            fifth forth darkness thing hath sixth rule night multiply him life
-            give they're great.
-          </p>
-          <div className="content1">
-            <div className="contentBox">
-              <h5>Our Mission</h5>
-              <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-            </div>
-            <div className="contentBox">
-              <h5>Our Vision</h5>
-              <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-            </div>
-          </div>
-          <div className="content2">
-            <div className="imgContent">
-              <img src={about2} alt="" />
-            </div>
-            <div className="textContent">
-              <h5>The Company</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-                sapien dignissim a elementum. Sociis metus, hendrerit mauris id
-                in. Quis sit sit ultrices tincidunt euismod luctus diam. Turpis
-                sodales orci etiam phasellus lacus id leo. Amet turpis nunc,
-                nulla massa est viverra interdum. Praesent auctor nulla morbi
-                non posuere mattis. Arcu eu id maecenas cras.
-              </p>
-            </div>
-          </div>
+    <div className="about-page-wrapper">
+      <div className="about-hero">
+        <div className="about-hero-content">
+          <h1>About Our Astrology Store</h1>
+          <p>Connecting you with cosmic energies through carefully crafted spiritual jewelry</p>
         </div>
       </div>
+
+      <section className="about-section container">
+        <div className="about-intro">
+          <div className="about-image-container">
+            <img src={about1} alt="Astrology Shop" className="about-image" />
+          </div>
+          <div className="about-intro-content">
+            <h2>Our Journey</h2>
+            <p className="lead-text">
+              We believe in the power of astrology to transform lives. Our store
+              offers carefully curated spiritual jewelry and bracelets, designed
+              to bring balance, healing, and positivity.
+            </p>
+            <p>
+              Our journey began with a deep understanding of the cosmic energies
+              that influence our daily lives. Each product in our collection is
+              selected with intention, ensuring it aligns with the needs of our
+              customers. Whether you seek prosperity, love, or protection, our
+              collection is here to support your spiritual path.
+            </p>
+          </div>
+        </div>
+
+        <div className="about-values">
+          <div className="value-card">
+            <h3>Our Mission</h3>
+            <p>
+              To provide high-quality astrology-based products that promote
+              spiritual well-being and inner harmony.
+            </p>
+          </div>
+          <div className="value-card">
+            <h3>Our Vision</h3>
+            <p>
+              To be the go-to destination for individuals seeking powerful
+              astrology jewelry and healing accessories.
+            </p>
+          </div>
+        </div>
+
+        <div className="about-who-we-are">
+          <div className="who-we-are-content">
+            <h2>Who We Are</h2>
+            <p>
+              Our store is a blend of tradition and modernity, offering
+              premium-quality astrology products crafted to channel positive
+              energies. Each bracelet, necklace, and ring is infused with
+              cosmic significance to help you manifest your desires.
+            </p>
+          </div>
+          <div className="who-we-are-image">
+            <img src={about2} alt="Astrology Collection" className="about-image" />
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
       <Services />
-      <div className="companyPartners">
-        <h5>Company Partners</h5>
-        <Swiper
-          slidesPerView={1}
-          loop={true}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
-          }}
-          spaceBetween={10}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-        >
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand1} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand3} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand4} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand5} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand6} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="aboutBrands">
-              <img src={brand7} alt="" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </>
+    </div>
   );
 };
 
