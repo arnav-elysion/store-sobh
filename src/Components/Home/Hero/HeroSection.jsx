@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import { Link } from "react-router-dom";
-import Product7 from "../../../Assets/Products/Product_7.jpg";
+import Product7 from "./Product_7.jpg";
 
 const HeroSection = () => {
   const scrollToTop = () => {
