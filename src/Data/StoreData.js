@@ -1,14 +1,14 @@
-import Product_1 from "../Assets/Products/Product_1.webp";
-import Product_2 from "../Assets/Products/Product_2.webp";
-import Product_3 from "../Assets/Products/Product_3.webp";
-import Product_4 from "../Assets/Products/Product_4.jpg";
-import Product_5 from "../Assets/Products/Product_5.jpg";
-import Product_6 from "../Assets/Products/Product_6.jpg";
-import Product_7 from "../Assets/Products/Product_7.jpg";
-import Product_8 from "../Assets/Products/Product_8.jpg";
-import Product_9 from "../Assets/Products/Product_9.webp";
+import Product_1 from "../Assets/Products/product_1.webp";
+import Product_2 from "../Assets/Products/product_2.webp";
+import Product_3 from "../Assets/Products/product_3.webp";
+import Product_4 from "../Assets/Products/product_4.jpg";
+import Product_5 from "../Assets/Products/product_5.jpg";
+import Product_6 from "../Assets/Products/product_6.jpg";
+import Product_7 from "../Assets/Products/product_7.jpg";
+import Product_8 from "../Assets/Products/product_8.jpg";
+import Product_9 from "../Assets/Products/product_9.webp";
 
-import Product_14 from "../Assets/Products/Product_14.webp";
+import Product_14 from "../Assets/Products/product_14.webp";
 
 
 let StoreData = [

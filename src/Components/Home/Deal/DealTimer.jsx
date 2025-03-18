@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Product_2 from "../../../Assets/Products/Product_2.webp";
+import Product_2 from "../../../Assets/Products/product_2.webp";
 import "./DealTimer.css";
 
 const DealTimer = () => {

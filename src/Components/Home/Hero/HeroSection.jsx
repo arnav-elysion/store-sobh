@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import { Link } from "react-router-dom";
-import Product7 from "./Product_7.jpg";
+import Product_7 from "../../../Assets/Products/product_7.jpg";
 
 const HeroSection = () => {
   const scrollToTop = () => {
@@ -29,7 +29,7 @@ const HeroSection = () => {
       </div>
       <div className="sectionright">
         <div className="image-container">
-          <img src={Product7} alt="Men's Jewelry" className="heroImage" />
+          <img src={Product_7} alt="Men's Jewelry" className="heroImage" />
         </div>
       </div>
     </div>
