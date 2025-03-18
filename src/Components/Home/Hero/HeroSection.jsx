@@ -1,7 +1,8 @@
 import React from "react";
 import "./HeroSection.css";
 import { Link } from "react-router-dom";
-import Product_7 from "../../../Assets/Products/product_7.jpg";
+// import Product_7 from "../../../Assets/Products/product_7.jpg";
+import StoreData from "../../../Data/StoreData";
 
 const HeroSection = () => {
   const scrollToTop = () => {
@@ -10,6 +11,7 @@ const HeroSection = () => {
       behavior: "smooth",
     });
   };
+  const Product_7=StoreData[5].frontImg;
 
   return (
     <div className="heroMain">

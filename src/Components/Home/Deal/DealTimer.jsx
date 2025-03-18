@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Product_2 from "../../../Assets/Products/product_2.webp";
+// import Product_2 from "../../../Assets/Products/product_2.webp";
+import StoreData from "../../../Data/StoreData";
 import "./DealTimer.css";
 
 const DealTimer = () => {
@@ -10,6 +11,8 @@ const DealTimer = () => {
       behavior: "smooth",
     });
   };
+
+  const Product_2=(StoreData[1].frontImg);
 
   const [timeLeft, setTimeLeft] = useState({
     days: 6,
