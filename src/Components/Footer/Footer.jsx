@@ -10,7 +10,7 @@ const Footer = () => {
     e.preventDefault();
     alert("Subscribed Successfully");
   };
-
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -33,14 +33,14 @@ const Footer = () => {
           
           {/* Updated Address */}
           <p>
-            Level 3 and Level 4, BPTP Centra One,<br />
+            BPTP Centra One,<br />
             Golf Course Ext Rd, Sector 61,<br />
             Gurugram, Haryana 122102, IN
           </p>
 
           <div className="footer_contact">
-            <p>support@mensjewel.com</p>
-            <p>+1 555-123-4567</p>
+            <p>support@manjewels.in</p>
+            <p>+91 9318407144</p>
           </div>
           
           <div className="social_links">
@@ -69,9 +69,18 @@ const Footer = () => {
           <h5>Company</h5>
           <ul onClick={scrollToTop}>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
-            <li><Link to="/terms">Terms & Privacy</Link></li>
+          </ul>
+        </div>
+
+        {/* Legal Links - Added new section */}
+        <div className="footer_links">
+          <h5>Legal</h5>
+          <ul onClick={scrollToTop}>
+            <li><Link to="/refund-policy">Refund Policy</Link></li>
+            <li><Link to="/terms-of-service">Terms of Service</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
           </ul>
         </div>
 
@@ -86,6 +95,21 @@ const Footer = () => {
           <div className="payment_methods">
             <p>Secure Payments</p>
             <img src={paymentIcon} alt="Payment Methods" />
+          </div>
+        </div>
+      </div>
+      
+      {/* Copyright Section - Added */}
+      <div className="footer_bottom">
+        <p>© {getCurrentYear()} MENS JEWEL. All Rights Reserved.</p>
+        <div className="footer_settings">
+          <div className="setting_dropdown">
+            <select>
+              <option value="usd">USD ($)</option>
+              <option value="eur">EUR (€)</option>
+              <option value="gbp">GBP (£)</option>
+              <option value="inr">INR (₹)</option>
+            </select>
           </div>
         </div>
       </div>

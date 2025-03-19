@@ -40,14 +40,14 @@ const ContactPage = () => {
             <div className="address">
               <h3>Our Store</h3>
               <p>
-                Level 3 and Level 4, BPTP Centra One,<br />
+                BPTP Centra One,<br />
                 Golf Course Ext Rd, Sector 61, <br />
                 Gurugram, Haryana 122102, INDIA
               </p>
               <p>
-                support@mensjewel.com
+              support@manjewels.in
                 <br />
-                +91 99999 99999
+                +91 9318407144
               </p>
             </div>
           </div>

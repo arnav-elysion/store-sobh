@@ -12,6 +12,9 @@ import Header from "../src/Components/Header/Navbar";
 import Footer from "../src/Components/Footer/Footer";
 import ProductDetails from "./Pages/ProductDetails";
 import NotFound from "./Pages/NotFound";
+import RefundPolicyPage from "./Pages/RefundPolicyPage";
+import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
+import TermsOfServicePage from "./Pages/TermsOfServicePage";
 import ScrollToTop from "./Components/ScrollButton/ScrollToTop";
 import Authentication from "./Pages/Authentication";
 import ResetPass from "./Components/Authentication/Reset/ResetPass";
@@ -33,6 +36,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/refund-policy" element={<RefundPolicyPage />}></Route>
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          
           <Route path="/blog" element={<Blog />} />
           <Route path="/product" element={<ProductDetails />} />
           <Route path="/loginSignUp" element={<Authentication />} />
