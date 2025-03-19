@@ -15,8 +15,8 @@ const TermsOfServicePage = () => {
         <div className="policy-section">
           <h2 className="section-title">OVERVIEW</h2>
           <p>
-            This website is operated by Sobhagya. Throughout the site, the terms "we", "us" and "our" refer to Sobhagya. 
-            Sobhagya offers this website, including all information, tools and Services available from this site to you, 
+            This website is operated by Man Jewels. Throughout the site, the terms "we", "us" and "our" refer to Man Jewels. 
+            Man Jewels offers this website, including all information, tools and Services available from this site to you, 
             the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.
           </p>
           <p>
@@ -40,7 +40,7 @@ const TermsOfServicePage = () => {
           </p>
           <p>
             Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our 
-            products and Services to you.
+            men's jewelry products and Services to you.
           </p>
         </div>
 
@@ -105,11 +105,11 @@ const TermsOfServicePage = () => {
         <div className="policy-section">
           <h2 className="section-title">SECTION 5 - PRODUCTS OR SERVICES</h2>
           <p>
-            Certain products or Services may be available exclusively online through the website. These products or Services may have 
+            Certain men's jewelry products or Services may be available exclusively online through the website. These products or Services may have 
             limited quantities and are subject to return or exchange only according to our Refund Policy.
           </p>
           <p>
-            We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. 
+            We have made every effort to display as accurately as possible the colors and images of our men's jewelry products that appear at the store. 
             We cannot guarantee that your computer monitor's display of any color will be accurate.
           </p>
           <p>
@@ -263,7 +263,7 @@ const TermsOfServicePage = () => {
             merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement.
           </p>
           <p>
-            In no case shall Sobhagya, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, Service providers 
+            In no case shall Man Jewels, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, Service providers 
             or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of 
             any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, 
             whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the Service or any 
@@ -278,7 +278,7 @@ const TermsOfServicePage = () => {
         <div className="policy-section">
           <h2 className="section-title">SECTION 14 - INDEMNIFICATION</h2>
           <p>
-            You agree to indemnify, defend and hold harmless Sobhagya and our parent, subsidiaries, affiliates, partners, officers, directors, agents, 
+            You agree to indemnify, defend and hold harmless Man Jewels and our parent, subsidiaries, affiliates, partners, officers, directors, agents, 
             contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including 
             reasonable attorneys' fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they 
             incorporate by reference, or your violation of any law or the rights of a third-party.
@@ -351,20 +351,20 @@ const TermsOfServicePage = () => {
         <div className="policy-section">
           <h2 className="section-title">SECTION 20 - CONTACT INFORMATION</h2>
           <p>
-            Questions about the Terms of Service should be sent to us at support@sobhagya.in.
+            Questions about the Terms of Service should be sent to us at support@manjewels.com.
           </p>
           <p>
             Our contact information is posted below:
           </p>
           <p>
-            Sobhagya<br />
-            support@sobhagya.in<br />
+            Man Jewels<br />
+            support@manjewels.com<br />
             Level 3 and Level 4, BPTP Centra One, Golf Course Ext Rd, Sector 61, Gurugram, Haryana 122102, IN
           </p>
         </div>
 
         <div className="policy-section">
-          <p className="last-updated">Last Updated: March 18, 2025</p>
+          <p className="last-updated">Last Updated: March 19, 2025</p>
         </div>
       </div>
     </div>
