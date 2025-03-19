@@ -173,7 +173,7 @@ const RefundPolicyPage = () => {
         <div className="policy-content">
           <div className="policy-section">
             <p>
-              At Mens Jewels, we take pride in offering handcrafted natural gemstones and men's jewelry, making each piece truly unique. 
+              At Man Jewels, we take pride in offering handcrafted natural gemstones and men's jewelry, making each piece truly unique. 
               However, due to the nature of the products we implore you to kindly refer to the below-mentioned policy before 
               requesting a return/exchange and/or refund.
             </p>
