@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="footer_brand">
           <div className="logoContainer">
             <Link to="/" onClick={scrollToTop} className="logo-text">
-              <span className="logo-main">MENS JEWEL</span>
+              <span className="logo-main">MAN JEWELS</span>
             </Link>
           </div>
           
