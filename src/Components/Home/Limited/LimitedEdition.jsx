@@ -160,7 +160,7 @@ const LimitedEdition = () => {
                     <Link to={`/Product/${product.productID}`} onClick={scrollToTop}>
                       <h5>{product.productName}</h5>
                     </Link>
-                    <p className="product-price">${product.productPrice}</p>
+                    <p className="product-price">₹{product.productPrice*20}</p>
                     <div className="productRatingReviews">
                       <div className="productRatingStar">
                         {renderStars(product.rating)}
